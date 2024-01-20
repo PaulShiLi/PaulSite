@@ -82,7 +82,7 @@ class Manager(commands.Bot):
         await self.get_channel(ENV["discord"]["guild"]["channels"]["logs"]).send(
             embed=embed.createEmbed(
                 title="Site Manager",
-                description="Site Manager koko wa desu!",
+                description="Site Manager is online",
                 timestampFooter=True,
             )
         )
