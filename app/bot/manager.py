@@ -77,12 +77,12 @@ class Manager(commands.Bot):
             status=nextcord.Status.online,
         )
         event.post(
-            toPrint="Manager-san connected to Discord", evtType="bot", filePath=__file__
+            toPrint="Site Manager connected to Discord", evtType="bot", filePath=__file__
         )
         await self.get_channel(ENV["discord"]["guild"]["channels"]["logs"]).send(
             embed=embed.createEmbed(
                 title="Manager-san",
-                description="Manager-san koko wa desu!",
+                description="Site Manager is online!",
                 timestampFooter=True,
             )
         )
