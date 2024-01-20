@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  psli:
+    container_name: psli
+    hostname: site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/var/www/PaulWebsite
+    networks:
+      - psliNetwork
+
+networks:
+  psliNetwork:
+    driver: bridge
+    external: true
