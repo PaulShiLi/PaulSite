@@ -45,10 +45,10 @@ def createEmbed(title=None, description=None, fields: list = [], inline: bool = 
         author = None
         thumbnail = THUMBNAIL
         embed.set_thumbnail(url=THUMBNAIL)
-        # embed.set_author(name="Manager-san")
+        # embed.set_author(name="Site Manager")
     else:
         embed.set_thumbnail(url=thumbnail)
-        # embed.set_author(name="Manager-san", icon_url=author)
+        # embed.set_author(name="Site Manager", icon_url=author)
         embed.set_author(icon_url=author)
     if footer != None:
         embed.set_footer(text=footer)

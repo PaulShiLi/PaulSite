@@ -30,17 +30,17 @@ class baseCommand(commands.Cog):
     async def bot(self, interaction: Interaction):
         pass
 
-    @bot.subcommand(description="Shuts down Manager-san!")
+    @bot.subcommand(description="Shuts down Site Manager!")
     async def shutdown(self, interaction: Interaction):
         await interaction.response.send_message(
             embed=embed.createEmbed(
                 title="Exit",
-                description="Manager-san shuts down successfully!",
+                description="Site Manager shuts down successfully!",
                 footer=f"Requested by {interaction.user.name}"
             )
         )
         self.console.log(
-            f"Manager-san shuts down successfully!\nRequested by {interaction.user.name}",
+            f"Site Manager shuts down successfully!\nRequested by {interaction.user.name}",
             title="Shutdown"
         )
         exit()
