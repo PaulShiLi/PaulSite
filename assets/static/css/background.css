@@ -1,0 +1,45 @@
+.background-main {
+  background: #404258;
+}
+
+.section {
+  margin-top: 10px;
+}
+
+.sectionHide {
+  display: none;
+}
+
+.sectionShow {
+  display: inline!important;
+}
+
+.appendSectionSpace {
+  margin-top: 1em;
+}
+
+.cardColor {
+  background: #50577A;
+}
+
+.cardSpace {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Discord Logo */
+
+.discordPfpLogo {
+  height: 400px;
+  -webkit-mask-image: url(https://cdn.discordapp.com/avatars/556592668348645377/5756fee341f44de864f2eaae39f70894.webp?size=100);
+  mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.card-body {
+  width: 100%;
+}
+

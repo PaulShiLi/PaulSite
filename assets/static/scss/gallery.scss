@@ -1,0 +1,178 @@
+$imgHeight: 175px;
+$imgWidth: 175px;
+
+$skillHeight: 120px;
+$skillWidth: 120px;
+
+$iconHeight: 40px;
+$iconWidth: 40px;
+
+
+.resizeDynamic {
+  height: $imgHeight;
+}
+
+.resize {
+  height: $imgHeight;
+  width: $imgWidth;
+}
+
+/* Image gallery for songs */
+
+.img__wrap {
+  position: relative;
+  height: $imgHeight;
+  width: $imgWidth;
+  min-width: $imgWidth;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: opacity(0.50);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .5s;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__wrap:hover img {
+  transform: scale(1.05);
+}
+
+.img__wrap img {
+  height: $imgHeight;
+  width: $imgWidth;
+  min-width: $imgWidth;
+  transition: 0.25s all ease-in-out;
+}
+
+.musicList ul li {
+  display: inline-flex;
+  padding-bottom: 0px;
+}
+
+.musicList ul {
+  flex-direction: column;
+  justify-content: flex-start!important;
+  display: flex;
+  max-width: 100vw;
+}
+
+// Image wrap for skills
+.skill__wrap {
+  position: relative;
+  height: $skillHeight;
+  width: $skillWidth;
+  min-width: $skillWidth;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.skill__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.skill__wrap:hover {
+  transform: scale(1.05);
+}
+
+.fillImg {
+  width: 50%;
+  height: 50%;
+  transition: 0.25s all ease-in-out;
+}
+
+.fillImg_Full {
+  // height: $skillHeight;
+  height: auto;
+  width: $skillWidth;
+  min-width: $skillWidth;
+  transition: 0.25s all ease-in-out;
+}
+
+
+// Image wrap for Icons
+.icon__wrap {
+  position: relative;
+  height: $iconHeight;
+  min-height: $iconHeight;
+  width: $iconWidth;
+  min-width: $iconWidth;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 1px;
+}
+
+.icon__wrap > i,
+.icon__wrap > svg {
+    font-size: 30px;
+}
+
+.icon__wrap > img.partial {
+    width: 50%;
+    height: 50%;
+}
+
+.icon__wrap > img.full {
+    width: 100%;
+    height: 100%;
+}
+
+.projectIcons {
+    position: absolute;
+    bottom: 2.5%;
+    right: 0px;
+}
+
+.icon__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon__wrap:hover {
+  transform: scale(1.05);
+}
+
+.icon-fillImg {
+  width: 50%;
+  height: 50%;
+  transition: 0.25s all ease-in-out;
+}
+
+.icon-fillImg_Full {
+  // height: $skillHeight;
+  height: auto;
+  width: $iconWidth;
+  min-width: $iconWidth;
+  transition: 0.25s all ease-in-out;
+}
+
+/* Hide Horizontal Scroll */
+
+.hideHorizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hideHorizontalScroll {
+  overflow-x: scroll;
+}

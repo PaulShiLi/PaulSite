@@ -1,0 +1,79 @@
+.heading {
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  color: #8d9091;
+}
+
+.text {
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Make cursor icon turn to cursor for clickables */
+
+.clickable {
+  cursor: pointer;
+}
+
+.notClickable {
+  cursor: default;
+}
+
+/* Text bold on hover */
+
+.headingDisableHover {
+  filter: brightness(100%) contrast(100%);
+}
+
+.headingHover {
+  filter: brightness(70%) contrast(65%);
+}
+
+.headingHoverParent:hover .headingHover {
+  filter: brightness(100%) contrast(100%);
+}
+
+/* Hover Animation */
+
+.hover-underline-animation {
+  /* display: inline-block; */
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+

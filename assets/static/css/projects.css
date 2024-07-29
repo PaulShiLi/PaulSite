@@ -1,0 +1,44 @@
+.projectCover {
+  max-height: 120px;
+  height: 125px;
+  overflow: hidden;
+  position: relative;
+}
+
+.projectCover > img {
+  width: 100%;
+  position: absolute;
+  top: -50%;
+}
+
+.projectBody > p.text {
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.projectBody > h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projectIcons {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  position: absolute;
+}
+
+.status {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.projectList > div:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  z-index: 99;
+}
+

@@ -1,0 +1,161 @@
+.resizeDynamic {
+  height: 155px;
+}
+
+.resize {
+  height: 155px;
+  width: 155px;
+}
+
+/* Image gallery for songs */
+.img__wrap {
+  position: relative;
+  height: 155px;
+  width: 155px;
+  min-width: 155px;
+  overflow: hidden;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: opacity(0.5);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__wrap:hover img {
+  transform: scale(1.05);
+}
+
+.img__wrap img {
+  height: 155px;
+  width: 155px;
+  min-width: 155px;
+  transition: 0.25s all ease-in-out;
+}
+
+.musicList ul li {
+  display: inline-flex;
+  padding-bottom: 0px;
+}
+
+.musicList ul {
+  flex-direction: column;
+  justify-content: flex-start !important;
+  display: flex;
+  max-width: 100vw;
+}
+
+.skill__wrap {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  min-width: 120px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.skill__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.skill__wrap:hover {
+  transform: scale(1.05);
+}
+
+.fillImg {
+  width: 50%;
+  height: 50%;
+  transition: 0.25s all ease-in-out;
+}
+
+.fillImg_Full {
+  height: auto;
+  width: 120px;
+  min-width: 120px;
+  transition: 0.25s all ease-in-out;
+}
+
+.icon__wrap {
+  position: relative;
+  height: 40px;
+  min-height: 40px;
+  width: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 1px;
+}
+
+.icon__wrap > i,
+.icon__wrap > svg {
+  font-size: 30px;
+}
+
+.icon__wrap > img.partial {
+  width: 50%;
+  height: 50%;
+}
+
+.icon__wrap > img.full {
+  width: 100%;
+  height: 100%;
+}
+
+.projectIcons {
+  position: absolute;
+  bottom: 2.5%;
+  right: 0px;
+}
+
+.icon__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon__wrap:hover {
+  transform: scale(1.05);
+}
+
+.icon-fillImg {
+  width: 50%;
+  height: 50%;
+  transition: 0.25s all ease-in-out;
+}
+
+.icon-fillImg_Full {
+  height: auto;
+  width: 40px;
+  min-width: 40px;
+  transition: 0.25s all ease-in-out;
+}
+
+/* Hide Horizontal Scroll */
+.hideHorizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hideHorizontalScroll {
+  overflow-x: scroll;
+}

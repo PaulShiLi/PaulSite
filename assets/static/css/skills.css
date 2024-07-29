@@ -1,0 +1,10 @@
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+#skills-list > li {
+  margin-bottom: 15px;
+}
+

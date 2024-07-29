@@ -1,0 +1,1072 @@
+{
+    "discord": {
+        "status": {
+            "discordStatus": "idle",
+            "customStatus": ""
+        }
+    },
+    "spotify": {
+        "status": {
+            "status": "noCurrentSong"
+        },
+        "history": {
+            "recents": [
+                {
+                    "name": "\u30a2\u30b7\u30f3\u30e1\u30c8\u30ea\u30fc",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/6L7Shz0FAhUKaqNqdPY9MR",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734e5ef51f88abde0bbdbfcf80",
+                    "releaseDate": "2019-07-10"
+                },
+                {
+                    "name": "where you are",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0kkjoRK8L3jGxdPUOuoubG",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27384bf4c4998605be04f0bd11b",
+                    "releaseDate": "2022-04-27"
+                },
+                {
+                    "name": "\u30b9\u30fc\u30b5\u30a4\u30c9\u3055\u304b\u306a-\u5f3e\u304d\u8a9e\u308aver-",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/2cCsEHXWkDeNIWWUKvx0TY",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2737c249f4f7e25e26f05ff4c04",
+                    "releaseDate": "2016-02-24"
+                },
+                {
+                    "name": "Find Me",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0iGuDlpAZmWNaXZLkfcqKk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27384bf4c4998605be04f0bd11b",
+                    "releaseDate": "2022-04-27"
+                },
+                {
+                    "name": "DREAM SOLISTER",
+                    "artist": "TRUE",
+                    "link": "https://open.spotify.com/track/59Swm876fBPn9qGsRByJNV",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2738dfa020883b455ece2be6d68",
+                    "releaseDate": "2015-12-23"
+                },
+                {
+                    "name": "Somewhen, Some Worlds with You",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0eAGD0LHLBLeHkkJscEmuy",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735c3303adbfb9e6053ae662f1",
+                    "releaseDate": "2018-12-12"
+                },
+                {
+                    "name": "\u50d5\u3089\u306f\u4eca\u306e\u306a\u304b\u3067",
+                    "artist": "\u03bc's",
+                    "link": "https://open.spotify.com/track/3CWqynPQ19CcRK1Tk67pUN",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273c5bbe2357c5516533a195d6b",
+                    "releaseDate": "2015-05-27"
+                },
+                {
+                    "name": "\u30d2\u30c8\u30ea\u30b7\u30ba\u30ab",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/40bAuNXggHwDpaIXHUbNYY",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b488109e7f3870d7c61738a5",
+                    "releaseDate": "2015-02-01"
+                },
+                {
+                    "name": "Sommertrip (crouka Remix)",
+                    "artist": "Frozen Starfall",
+                    "link": "https://open.spotify.com/track/77FduHplPLO3CdPVrgHLaP",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2737de47046b722509d5f5fbd12",
+                    "releaseDate": "2020-07-17"
+                },
+                {
+                    "name": "\u30ab\u30f3\u30bf\u30ec\u30e9 - Live",
+                    "artist": "Tokyo Philharmonic Orchestra",
+                    "link": "https://open.spotify.com/track/1TpaxbL7j1aQaO7bxB5N5Y",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e810a169e894aab9b2f37f42",
+                    "releaseDate": "2022-02-02"
+                },
+                {
+                    "name": "\u30b8\u30e5\u30ea\u30a8\u30c3\u30bf",
+                    "artist": "LIP\u00d7LIP",
+                    "link": "https://open.spotify.com/track/5cEUftOiCzNGlOVzEALeMk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27335a30f8546d113c914d2734c",
+                    "releaseDate": "2022-06-22"
+                },
+                {
+                    "name": "\u675f\u306e\u9593\u30e6\u30fc\u30c8\u30d4\u30a2",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/4vpWH11iH0rLMYtYxxTwFP",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734620e33972e450d75cf02eb6",
+                    "releaseDate": "2012-12-30"
+                },
+                {
+                    "name": "divine intervention",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0Fw8DOMdG5EIGWQ9ewuuMk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735c3303adbfb9e6053ae662f1",
+                    "releaseDate": "2018-12-12"
+                },
+                {
+                    "name": "A Promise Just For You",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/60llBTJ57A6WJOvGja26Dm",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u7d05\u3044\u82b1 [with \u795e\u6708\u7d05\u7483\u5922&\u5341\u8272\u594f\u97f3&\u51ea\u30e6\u30a4\u30ca]",
+                    "artist": "\u5c11\u5973\u30d5\u30e9\u30af\u30bf\u30eb",
+                    "link": "https://open.spotify.com/track/4m8N5EROjFptDv86etaJ8E",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273dc393c69d22a0b31f492d647",
+                    "releaseDate": "2020-12-31"
+                },
+                {
+                    "name": "\u82b1\u6708\u591c",
+                    "artist": "Yonder Voice",
+                    "link": "https://open.spotify.com/track/4ucQ24dASfgFqosETGYM7m",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27397fe898f05f8cbf9d728f45b",
+                    "releaseDate": "2014-05-11"
+                },
+                {
+                    "name": "\u30b9\u30bf\u30fc\u30c6\u30a3\u30f3\u30b0\u30d6\u30eb\u30fc",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/68CAONg2aSDKUu9rPsV6Om",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d7a6c99c292eaa54ddf8a3f7",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "\u6708\u3068\u82b1\u675f",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1G5rSnzVH6RodmDS2po9Cn",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273fbef4bb6c909795b8f8aab58",
+                    "releaseDate": "2022-08-10"
+                },
+                {
+                    "name": "Cantarella",
+                    "artist": "KurousaP",
+                    "link": "https://open.spotify.com/track/2VD4DrLIkfItv7grWXCXpW",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27349c200c459be73d989250bef",
+                    "releaseDate": "2013"
+                },
+                {
+                    "name": "\u82b1\u306e\u5854",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1yt4wO7dKCwsfjch8SN9aU",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273242fcba70f5b65bd68ddece6",
+                    "releaseDate": "2022-07-03"
+                },
+                {
+                    "name": "birthday song",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1afV5vk4pDJXu699nKxWVZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734d055970896e1094130202ba",
+                    "releaseDate": "2017-05-17"
+                },
+                {
+                    "name": "BRIGHT STREAM",
+                    "artist": "Nana Mizuki",
+                    "link": "https://open.spotify.com/track/0X1qxaPWL0NgLIfXUfHPoG",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b3880af7ab1f5dccdc92bc26",
+                    "releaseDate": "2012-12-12"
+                },
+                {
+                    "name": "\u5c0f\u3055\u306a\u604b\u306e\u3046\u305f",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/3rysOpH29UDtPpv5W2pzWZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "\u6b7b\u3057\u3066\u306a\u304a\u3001\u5c4a\u304b\u306c\u60f3\u3044",
+                    "artist": "Silver Forest",
+                    "link": "https://open.spotify.com/track/6w9wYjkzgOx7IgxTvKLO5E",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27301ba845673b153917aa13c90",
+                    "releaseDate": "2008-08-16"
+                },
+                {
+                    "name": "\u30ec\u30d7\u30ea\u30ab\u306e\u604b",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/3aCCD8ngKZO57Po53hb8b9",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2739d361899a7c5eda177abe239",
+                    "releaseDate": "2011-08-15"
+                },
+                {
+                    "name": "\u30ea\u30c8\u30eb\u30bd\u30eb\u30b8\u30e3\u30fc",
+                    "artist": "\u7530\u6240\u3042\u305a\u3055",
+                    "link": "https://open.spotify.com/track/4ESR8uG70TFcWKqtePEJpo",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273935a0a1274f9c0a4f1d995ba",
+                    "releaseDate": "2019-01-23"
+                },
+                {
+                    "name": "\u544a\u767d\u30d0\u30f3\u30b8\u30fc\u30b8\u30e3\u30f3\u30d7",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/2ebmLLCUuBqHJUWMDeIOGv",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27375dce76b2fd9bd842263eb76",
+                    "releaseDate": "2020-09-02"
+                },
+                {
+                    "name": "Find Me",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0F0ZWcPbCVMIk0LQNK1gey",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2733013bf1bbe33bbbc2d2fc7df",
+                    "releaseDate": "2019-08-07"
+                },
+                {
+                    "name": "adrenaline!!!",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/10Yk9WbT2840l1NK5RWvkq",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27315140c66fb88425e1c914ff4",
+                    "releaseDate": "2017-08-23"
+                },
+                {
+                    "name": "Rhapsody of Blue Sky",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/2Y3lK46bVHAl8VBx25EMTZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27310fd215e6803b83d2f9ba0d5",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "DEAREST DROP",
+                    "artist": "\u7530\u6240\u3042\u305a\u3055",
+                    "link": "https://open.spotify.com/track/3yGMNQFdIflEty0tdKlEdd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b4790c1ba1bb723318913b47",
+                    "releaseDate": "2017-10-25"
+                },
+                {
+                    "name": "\u8d64\u3044\u6d99",
+                    "artist": "\u5ddd\u7530\u307e\u307f",
+                    "link": "https://open.spotify.com/track/3kN8KLK1YDlcQt56pOTgEq",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27319f2c9b6dd3be1a68ddffad1",
+                    "releaseDate": "2008-03-26"
+                },
+                {
+                    "name": "\u7d0b",
+                    "artist": "Eri Kitamura",
+                    "link": "https://open.spotify.com/track/2m8IiKWBUVMpqTBqRWIn52",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273897da185a5432e8aea2586cd",
+                    "releaseDate": "2012-07-25"
+                },
+                {
+                    "name": "\u300e\u6771\u65b9LostWord\u300f\u30c6\u30fc\u30de\u66f2 \u30ed\u30b9\u30c8\u30ef\u30fc\u30c9\u30af\u30ed\u30cb\u30ab\u30eb",
+                    "artist": "\u3044\u3068\u3046\u304b\u306a\u3053",
+                    "link": "https://open.spotify.com/track/6Chw4FO2RlmS96ttxnWAcx",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2739deb9f795f2cccc1ed93348b",
+                    "releaseDate": "2020-03-31"
+                },
+                {
+                    "name": "Kodou",
+                    "artist": "KaguraNana",
+                    "link": "https://open.spotify.com/track/5EX8Bdlw93WRr8aWQ8dBe8",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273f0339620a3481c27e1725275",
+                    "releaseDate": "2021-08-01"
+                },
+                {
+                    "name": "\u8a00\u308f\u306a\u3044\u3051\u3069\u306d\u3002",
+                    "artist": "\u5927\u539f\u3086\u3044\u5b50",
+                    "link": "https://open.spotify.com/track/13saEo7ciOYh6nUGrC79cx",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27398a593a376031c1e7a64cb0f",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "The Color to Gray World",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/4kPptwCgCVN9XhjBwxIERa",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734c60b9d553dc2d5a16ed77ea",
+                    "releaseDate": "2016-04-27"
+                },
+                {
+                    "name": "Celestial Method -Quote from Stardust Interlude-",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/4HyHCyU2NVlEnUCLLRi7c8",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734a2730ed0d9cfa176fe99971",
+                    "releaseDate": "2014-12-24"
+                },
+                {
+                    "name": "The\u2661World's\u2661End",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/1q0hYmsjjXnDOV5EXZmBUL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273444d008a3faa7266ea8fcb7f",
+                    "releaseDate": "2015-01-07"
+                },
+                {
+                    "name": "Sunset \u30ab\u30f3\u30d5\u30fc",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/2jQVJAUS8dveRnCR6pksEr",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273ef6c77a0c55525ca56fa7fce",
+                    "releaseDate": "2019-02-27"
+                },
+                {
+                    "name": "sugar sweet nightmare",
+                    "artist": "\u7269\u8a9e\u30b7\u30ea\u30fc\u30ba",
+                    "link": "https://open.spotify.com/track/4VTxO7SMtu0AcGqazV15AL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273730cc8eb459c92944233e891",
+                    "releaseDate": "2018-11-02"
+                },
+                {
+                    "name": "Ginsou Vampire",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/47wjZuAbVUjo2D6WUaYtT4",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u3042\u306a\u305f\u306b",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/0JxsibuxzDijNdlWTlMQ3v",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27370b8fdc4df4098b686128ed7",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "Eternal clock hands",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/6s6LP9xzjHrdUSPYU9RHvb",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u8a00\u308f\u306a\u3044\u3051\u3069\u306d\u3002",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/0TYEBK9k4wLp2egnebgOc2",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27370b8fdc4df4098b686128ed7",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "\u30a4\u30d3\u30c4\u30ca\u30b3\u30c8\u30d0",
+                    "artist": "DAZBEE",
+                    "link": "https://open.spotify.com/track/1ru7EpUF1bidYVq1n6VWUz",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27350556b87f3596186ae57e93a",
+                    "releaseDate": "2023-01-12"
+                },
+                {
+                    "name": "Ray Rule",
+                    "artist": "Kaori Ishihara",
+                    "link": "https://open.spotify.com/track/43uysfmwc42GU8dbCUrske",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273da0a3ce03c811c8191ffd4e1",
+                    "releaseDate": "2019-01-14"
+                },
+                {
+                    "name": "step, step",
+                    "artist": "\u795e\u5d0e\u30a8\u30eb\u30b6",
+                    "link": "https://open.spotify.com/track/7fgq3c35vndIAwNDY2e1fd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735eb303a352fc9a5049aebd6c",
+                    "releaseDate": "2018-07-04"
+                },
+                {
+                    "name": "\u30c1\u30eb\u30ce\u306e\u30d1\u30fc\u30d5\u30a7\u30af\u30c8\u3055\u3093\u3059\u3046\u6559\u5ba4",
+                    "artist": "IOSYS",
+                    "link": "https://open.spotify.com/track/6MwAs47LdYmlstiDmHzksi",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273fe910682585a207091d63cde",
+                    "releaseDate": "2008-11-02"
+                },
+                {
+                    "name": "\u6c17\u307e\u3050\u308c\u30ed\u30de\u30f3\u30c6\u30a3\u30c3\u30af",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/2ivTDMirJsFKznRukF1Dga",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                }
+            ],
+            "mediumTerm": [
+                {
+                    "name": "\u5b64\u72ec\u6708",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/0lmfvwJroKi6Qo0oiffbad",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b488109e7f3870d7c61738a5",
+                    "releaseDate": "2015-02-01"
+                },
+                {
+                    "name": "where you are",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0kkjoRK8L3jGxdPUOuoubG",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27384bf4c4998605be04f0bd11b",
+                    "releaseDate": "2022-04-27"
+                },
+                {
+                    "name": "Sommertrip (crouka Remix)",
+                    "artist": "Frozen Starfall",
+                    "link": "https://open.spotify.com/track/77FduHplPLO3CdPVrgHLaP",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2737de47046b722509d5f5fbd12",
+                    "releaseDate": "2020-07-17"
+                },
+                {
+                    "name": "Find Me",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0iGuDlpAZmWNaXZLkfcqKk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27384bf4c4998605be04f0bd11b",
+                    "releaseDate": "2022-04-27"
+                },
+                {
+                    "name": "DREAM SOLISTER",
+                    "artist": "TRUE",
+                    "link": "https://open.spotify.com/track/59Swm876fBPn9qGsRByJNV",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2738dfa020883b455ece2be6d68",
+                    "releaseDate": "2015-12-23"
+                },
+                {
+                    "name": "\u50d5\u3089\u306f\u4eca\u306e\u306a\u304b\u3067",
+                    "artist": "\u03bc's",
+                    "link": "https://open.spotify.com/track/3CWqynPQ19CcRK1Tk67pUN",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273c5bbe2357c5516533a195d6b",
+                    "releaseDate": "2015-05-27"
+                },
+                {
+                    "name": "\u30d2\u30c8\u30ea\u30b7\u30ba\u30ab",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/40bAuNXggHwDpaIXHUbNYY",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b488109e7f3870d7c61738a5",
+                    "releaseDate": "2015-02-01"
+                },
+                {
+                    "name": "Somewhen, Some Worlds with You",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0eAGD0LHLBLeHkkJscEmuy",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735c3303adbfb9e6053ae662f1",
+                    "releaseDate": "2018-12-12"
+                },
+                {
+                    "name": "\u675f\u306e\u9593\u30e6\u30fc\u30c8\u30d4\u30a2",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/4vpWH11iH0rLMYtYxxTwFP",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734620e33972e450d75cf02eb6",
+                    "releaseDate": "2012-12-30"
+                },
+                {
+                    "name": "divine intervention",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0Fw8DOMdG5EIGWQ9ewuuMk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735c3303adbfb9e6053ae662f1",
+                    "releaseDate": "2018-12-12"
+                },
+                {
+                    "name": "\u30b9\u30fc\u30b5\u30a4\u30c9\u3055\u304b\u306a-\u5f3e\u304d\u8a9e\u308aver-",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/2cCsEHXWkDeNIWWUKvx0TY",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2737c249f4f7e25e26f05ff4c04",
+                    "releaseDate": "2016-02-24"
+                },
+                {
+                    "name": "\u82b1\u6708\u591c",
+                    "artist": "Yonder Voice",
+                    "link": "https://open.spotify.com/track/4ucQ24dASfgFqosETGYM7m",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27397fe898f05f8cbf9d728f45b",
+                    "releaseDate": "2014-05-11"
+                },
+                {
+                    "name": "\u30b9\u30bf\u30fc\u30c6\u30a3\u30f3\u30b0\u30d6\u30eb\u30fc",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/68CAONg2aSDKUu9rPsV6Om",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d7a6c99c292eaa54ddf8a3f7",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "\u30ab\u30f3\u30bf\u30ec\u30e9 - Live",
+                    "artist": "Tokyo Philharmonic Orchestra",
+                    "link": "https://open.spotify.com/track/1TpaxbL7j1aQaO7bxB5N5Y",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e810a169e894aab9b2f37f42",
+                    "releaseDate": "2022-02-02"
+                },
+                {
+                    "name": "BRIGHT STREAM",
+                    "artist": "Nana Mizuki",
+                    "link": "https://open.spotify.com/track/0X1qxaPWL0NgLIfXUfHPoG",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b3880af7ab1f5dccdc92bc26",
+                    "releaseDate": "2012-12-12"
+                },
+                {
+                    "name": "\u6b7b\u3057\u3066\u306a\u304a\u3001\u5c4a\u304b\u306c\u60f3\u3044",
+                    "artist": "Silver Forest",
+                    "link": "https://open.spotify.com/track/6w9wYjkzgOx7IgxTvKLO5E",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27301ba845673b153917aa13c90",
+                    "releaseDate": "2008-08-16"
+                },
+                {
+                    "name": "\u30ec\u30d7\u30ea\u30ab\u306e\u604b",
+                    "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
+                    "link": "https://open.spotify.com/track/3aCCD8ngKZO57Po53hb8b9",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2739d361899a7c5eda177abe239",
+                    "releaseDate": "2011-08-15"
+                },
+                {
+                    "name": "A Promise Just For You",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/60llBTJ57A6WJOvGja26Dm",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u30ea\u30c8\u30eb\u30bd\u30eb\u30b8\u30e3\u30fc",
+                    "artist": "\u7530\u6240\u3042\u305a\u3055",
+                    "link": "https://open.spotify.com/track/4ESR8uG70TFcWKqtePEJpo",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273935a0a1274f9c0a4f1d995ba",
+                    "releaseDate": "2019-01-23"
+                },
+                {
+                    "name": "\u30b8\u30e5\u30ea\u30a8\u30c3\u30bf",
+                    "artist": "LIP\u00d7LIP",
+                    "link": "https://open.spotify.com/track/5cEUftOiCzNGlOVzEALeMk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27335a30f8546d113c914d2734c",
+                    "releaseDate": "2022-06-22"
+                },
+                {
+                    "name": "Cantarella",
+                    "artist": "KurousaP",
+                    "link": "https://open.spotify.com/track/2VD4DrLIkfItv7grWXCXpW",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27349c200c459be73d989250bef",
+                    "releaseDate": "2013"
+                },
+                {
+                    "name": "\u7d05\u3044\u82b1 [with \u795e\u6708\u7d05\u7483\u5922&\u5341\u8272\u594f\u97f3&\u51ea\u30e6\u30a4\u30ca]",
+                    "artist": "\u5c11\u5973\u30d5\u30e9\u30af\u30bf\u30eb",
+                    "link": "https://open.spotify.com/track/4m8N5EROjFptDv86etaJ8E",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273dc393c69d22a0b31f492d647",
+                    "releaseDate": "2020-12-31"
+                },
+                {
+                    "name": "birthday song",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1afV5vk4pDJXu699nKxWVZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734d055970896e1094130202ba",
+                    "releaseDate": "2017-05-17"
+                },
+                {
+                    "name": "\u6708\u3068\u82b1\u675f",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1G5rSnzVH6RodmDS2po9Cn",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273fbef4bb6c909795b8f8aab58",
+                    "releaseDate": "2022-08-10"
+                },
+                {
+                    "name": "\u544a\u767d\u30d0\u30f3\u30b8\u30fc\u30b8\u30e3\u30f3\u30d7",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/2ebmLLCUuBqHJUWMDeIOGv",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27375dce76b2fd9bd842263eb76",
+                    "releaseDate": "2020-09-02"
+                },
+                {
+                    "name": "adrenaline!!!",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/10Yk9WbT2840l1NK5RWvkq",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27315140c66fb88425e1c914ff4",
+                    "releaseDate": "2017-08-23"
+                },
+                {
+                    "name": "Find Me",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0F0ZWcPbCVMIk0LQNK1gey",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2733013bf1bbe33bbbc2d2fc7df",
+                    "releaseDate": "2019-08-07"
+                },
+                {
+                    "name": "DEAREST DROP",
+                    "artist": "\u7530\u6240\u3042\u305a\u3055",
+                    "link": "https://open.spotify.com/track/3yGMNQFdIflEty0tdKlEdd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273b4790c1ba1bb723318913b47",
+                    "releaseDate": "2017-10-25"
+                },
+                {
+                    "name": "\u8d64\u3044\u6d99",
+                    "artist": "\u5ddd\u7530\u307e\u307f",
+                    "link": "https://open.spotify.com/track/3kN8KLK1YDlcQt56pOTgEq",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27319f2c9b6dd3be1a68ddffad1",
+                    "releaseDate": "2008-03-26"
+                },
+                {
+                    "name": "\u7d0b",
+                    "artist": "Eri Kitamura",
+                    "link": "https://open.spotify.com/track/2m8IiKWBUVMpqTBqRWIn52",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273897da185a5432e8aea2586cd",
+                    "releaseDate": "2012-07-25"
+                },
+                {
+                    "name": "\u300e\u6771\u65b9LostWord\u300f\u30c6\u30fc\u30de\u66f2 \u30ed\u30b9\u30c8\u30ef\u30fc\u30c9\u30af\u30ed\u30cb\u30ab\u30eb",
+                    "artist": "\u3044\u3068\u3046\u304b\u306a\u3053",
+                    "link": "https://open.spotify.com/track/6Chw4FO2RlmS96ttxnWAcx",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2739deb9f795f2cccc1ed93348b",
+                    "releaseDate": "2020-03-31"
+                },
+                {
+                    "name": "\u8a00\u308f\u306a\u3044\u3051\u3069\u306d\u3002",
+                    "artist": "\u5927\u539f\u3086\u3044\u5b50",
+                    "link": "https://open.spotify.com/track/13saEo7ciOYh6nUGrC79cx",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27398a593a376031c1e7a64cb0f",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "The Color to Gray World",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/4kPptwCgCVN9XhjBwxIERa",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734c60b9d553dc2d5a16ed77ea",
+                    "releaseDate": "2016-04-27"
+                },
+                {
+                    "name": "\u82b1\u306e\u5854",
+                    "artist": "Sayuri",
+                    "link": "https://open.spotify.com/track/1yt4wO7dKCwsfjch8SN9aU",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273242fcba70f5b65bd68ddece6",
+                    "releaseDate": "2022-07-03"
+                },
+                {
+                    "name": "Kodou",
+                    "artist": "KaguraNana",
+                    "link": "https://open.spotify.com/track/5EX8Bdlw93WRr8aWQ8dBe8",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273f0339620a3481c27e1725275",
+                    "releaseDate": "2021-08-01"
+                },
+                {
+                    "name": "Celestial Method -Quote from Stardust Interlude-",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/4HyHCyU2NVlEnUCLLRi7c8",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734a2730ed0d9cfa176fe99971",
+                    "releaseDate": "2014-12-24"
+                },
+                {
+                    "name": "Rhapsody of Blue Sky",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/2Y3lK46bVHAl8VBx25EMTZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27310fd215e6803b83d2f9ba0d5",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "Sunset \u30ab\u30f3\u30d5\u30fc",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/2jQVJAUS8dveRnCR6pksEr",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273ef6c77a0c55525ca56fa7fce",
+                    "releaseDate": "2019-02-27"
+                },
+                {
+                    "name": "sugar sweet nightmare",
+                    "artist": "\u7269\u8a9e\u30b7\u30ea\u30fc\u30ba",
+                    "link": "https://open.spotify.com/track/4VTxO7SMtu0AcGqazV15AL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273730cc8eb459c92944233e891",
+                    "releaseDate": "2018-11-02"
+                },
+                {
+                    "name": "The\u2661World's\u2661End",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/1q0hYmsjjXnDOV5EXZmBUL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273444d008a3faa7266ea8fcb7f",
+                    "releaseDate": "2015-01-07"
+                },
+                {
+                    "name": "\u3042\u306a\u305f\u306b",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/0JxsibuxzDijNdlWTlMQ3v",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27370b8fdc4df4098b686128ed7",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "Ginsou Vampire",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/47wjZuAbVUjo2D6WUaYtT4",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u5c0f\u3055\u306a\u604b\u306e\u3046\u305f",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/3rysOpH29UDtPpv5W2pzWZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "Eternal clock hands",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/6s6LP9xzjHrdUSPYU9RHvb",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "\u8a00\u308f\u306a\u3044\u3051\u3069\u306d\u3002",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/0TYEBK9k4wLp2egnebgOc2",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27370b8fdc4df4098b686128ed7",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "\u30a4\u30d3\u30c4\u30ca\u30b3\u30c8\u30d0",
+                    "artist": "DAZBEE",
+                    "link": "https://open.spotify.com/track/1ru7EpUF1bidYVq1n6VWUz",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27350556b87f3596186ae57e93a",
+                    "releaseDate": "2023-01-12"
+                },
+                {
+                    "name": "Ray Rule",
+                    "artist": "Kaori Ishihara",
+                    "link": "https://open.spotify.com/track/43uysfmwc42GU8dbCUrske",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273da0a3ce03c811c8191ffd4e1",
+                    "releaseDate": "2019-01-14"
+                },
+                {
+                    "name": "step, step",
+                    "artist": "\u795e\u5d0e\u30a8\u30eb\u30b6",
+                    "link": "https://open.spotify.com/track/7fgq3c35vndIAwNDY2e1fd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735eb303a352fc9a5049aebd6c",
+                    "releaseDate": "2018-07-04"
+                },
+                {
+                    "name": "\u30c1\u30eb\u30ce\u306e\u30d1\u30fc\u30d5\u30a7\u30af\u30c8\u3055\u3093\u3059\u3046\u6559\u5ba4",
+                    "artist": "IOSYS",
+                    "link": "https://open.spotify.com/track/6MwAs47LdYmlstiDmHzksi",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273fe910682585a207091d63cde",
+                    "releaseDate": "2008-11-02"
+                },
+                {
+                    "name": "\u6c17\u307e\u3050\u308c\u30ed\u30de\u30f3\u30c6\u30a3\u30c3\u30af",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/2ivTDMirJsFKznRukF1Dga",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                }
+            ],
+            "longTerm": [
+                {
+                    "name": "divine intervention",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0Fw8DOMdG5EIGWQ9ewuuMk",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735c3303adbfb9e6053ae662f1",
+                    "releaseDate": "2018-12-12"
+                },
+                {
+                    "name": "Vitalization",
+                    "artist": "Nana Mizuki",
+                    "link": "https://open.spotify.com/track/44HokGU8V1GTc0vdOIXrmL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e896bd4bb57dd5d8934bfc1a",
+                    "releaseDate": "2018-01-10"
+                },
+                {
+                    "name": "Sunset \u30ab\u30f3\u30d5\u30fc",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/2jQVJAUS8dveRnCR6pksEr",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273ef6c77a0c55525ca56fa7fce",
+                    "releaseDate": "2019-02-27"
+                },
+                {
+                    "name": "Ginsou Vampire",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/47wjZuAbVUjo2D6WUaYtT4",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "ETERNAL BLAZE",
+                    "artist": "Nana Mizuki",
+                    "link": "https://open.spotify.com/track/6FghEVkOL58IWEkRFqfKks",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2736710efb169abfd4ee349b8e9",
+                    "releaseDate": "2006-05-03"
+                },
+                {
+                    "name": "\u30d0\u30cb\u30e9\u30bd\u30eb\u30c8",
+                    "artist": "Miss Monochrome",
+                    "link": "https://open.spotify.com/track/3WJ3mPm528PeLjBgXwtKXH",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e8bfd9d62038adf9302e8ade",
+                    "releaseDate": "2016-02-10"
+                },
+                {
+                    "name": "never ever(\u5800\u6c5f\u7531\u8863LIVE TOUR 2019\u6587\u5b66\u5c11\u5973\u5036\u697d\u90e8)",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/0YqL3YyeziS8DnBL4qIea3",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2731543063d8bf28b32a81282d4",
+                    "releaseDate": "2020-07-24"
+                },
+                {
+                    "name": "\u5c0f\u3055\u306a\u604b\u306e\u3046\u305f",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/3rysOpH29UDtPpv5W2pzWZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "Eternal clock hands",
+                    "artist": "Rina Komatsu",
+                    "link": "https://open.spotify.com/track/6s6LP9xzjHrdUSPYU9RHvb",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273e9190d6b3a56942eaf72a239",
+                    "releaseDate": "2021-10-31"
+                },
+                {
+                    "name": "Time Lapse",
+                    "artist": "Poppin'Party",
+                    "link": "https://open.spotify.com/track/3ttNphIzyD0XdDPI8zHEIh",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d6130f8b445a9e7491b025d0",
+                    "releaseDate": "2019-01-30"
+                },
+                {
+                    "name": "one another",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/1MeW4UTFBWq1XmYvyZBqoY",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d7a6c99c292eaa54ddf8a3f7",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "The Color to Gray World",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/4kPptwCgCVN9XhjBwxIERa",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734c60b9d553dc2d5a16ed77ea",
+                    "releaseDate": "2016-04-27"
+                },
+                {
+                    "name": "CODING - Live at Makuhari Messe 2019.08.04",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/7L7mK7l3T9Y0z2myXCJMUv",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732103a9321983ecf0a2dbff76",
+                    "releaseDate": "2020-08-26"
+                },
+                {
+                    "name": "\u590f\u306e\u7d04\u675f(\u5800\u6c5f\u7531\u8863LIVE TOUR 2019\u6587\u5b66\u5c11\u5973\u5036\u697d\u90e8)",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/5kzAzsOHpjJQdUDd9C6iwu",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2731543063d8bf28b32a81282d4",
+                    "releaseDate": "2020-07-24"
+                },
+                {
+                    "name": "\u6df1\u611b",
+                    "artist": "Nana Mizuki",
+                    "link": "https://open.spotify.com/track/0gsI8ofrtQ7EWU2LTHlhmd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27321c6bf27618819ad88c26d1d",
+                    "releaseDate": "2011-11-23"
+                },
+                {
+                    "name": "Take a step forward - Live at Makuhari Messe 2019.08.04",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/4u1YtxLRm1USZ7CxbNR6ei",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732103a9321983ecf0a2dbff76",
+                    "releaseDate": "2020-08-26"
+                },
+                {
+                    "name": "\u653e\u8ab2\u5f8c\u306e\u30ea\u30d0\u30c6\u30a3",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/44Opd02AZ2KRYM4JMb9RvM",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d7a6c99c292eaa54ddf8a3f7",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "\u30e1\u30c8\u3099\u30ec\u30fc(Sail Out~primary~Youthful Dreamer~adrenaline!!!) - Live at Makuhari Messe 2019.08.04",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/3kdnGwuTAJUgioS8aA0uY9",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732103a9321983ecf0a2dbff76",
+                    "releaseDate": "2020-08-26"
+                },
+                {
+                    "name": "\u8a00\u308f\u306a\u3044\u3051\u3069\u306d\u3002",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/0TYEBK9k4wLp2egnebgOc2",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27370b8fdc4df4098b686128ed7",
+                    "releaseDate": "2019-09-25"
+                },
+                {
+                    "name": "For \u30d5\u30eb\u30fc\u30c4\u30d0\u30b9\u30b1\u30c3\u30c8",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/5h7jAOVEPVKcEZatanaxUC",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273786a33d4c86b4f5daf5c89b8",
+                    "releaseDate": "2003-03-26"
+                },
+                {
+                    "name": "Hail to the world!!",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/1lbFzXXy74JhN2Ccica3gB",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273bae1752979cfbb86132e63b1",
+                    "releaseDate": "2017"
+                },
+                {
+                    "name": "\u30b9\u30bf\u30fc\u30c6\u30a3\u30f3\u30b0\u30d6\u30eb\u30fc",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/2ZZIQRTnm8ec0XY1mS1hKd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27360aa43097503bec824e6fda1",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "YAHHO!!",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/0NioVgnScCfYil8gbg7uR0",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "\u30a4\u30d3\u30c4\u30ca\u30b3\u30c8\u30d0",
+                    "artist": "DAZBEE",
+                    "link": "https://open.spotify.com/track/1ru7EpUF1bidYVq1n6VWUz",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27350556b87f3596186ae57e93a",
+                    "releaseDate": "2023-01-12"
+                },
+                {
+                    "name": "Distortionary",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/29FF1iDKObh7CnJs8DNGNH",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273bae1752979cfbb86132e63b1",
+                    "releaseDate": "2017"
+                },
+                {
+                    "name": "\u534a\u6c38\u4e45\u7684\u306b\u611b\u3057\u3066\u3088\u2661",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/5CyM9m4CTPJrwdAdMrMK0O",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273444d008a3faa7266ea8fcb7f",
+                    "releaseDate": "2015-01-07"
+                },
+                {
+                    "name": "Love Destiny",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/0w69RRVtH3L8ZOjSW0cwrz",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "Lemon",
+                    "artist": "Kenshi Yonezu",
+                    "link": "https://open.spotify.com/track/35KlorpQ6LQVVslvlcu1gN",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273ae8ab64f32bde85afa89779d",
+                    "releaseDate": "2018-03-14"
+                },
+                {
+                    "name": "\u30a2\u30b7\u30f3\u30e1\u30c8\u30ea\u30fc",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/6L7Shz0FAhUKaqNqdPY9MR",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2734e5ef51f88abde0bbdbfcf80",
+                    "releaseDate": "2019-07-10"
+                },
+                {
+                    "name": "Find Me",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/0F0ZWcPbCVMIk0LQNK1gey",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2733013bf1bbe33bbbc2d2fc7df",
+                    "releaseDate": "2019-08-07"
+                },
+                {
+                    "name": "\u30b9\u30af\u30e9\u30f3\u30d6\u30eb",
+                    "artist": "\u5800\u6c5f\u7531\u8863 with UNSCANDAL",
+                    "link": "https://open.spotify.com/track/3qPM7h6KxfY5ENeMuWqlnB",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "\u685c",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/0yb0FjCCZ8DJsvkpjyiO8S",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "PRESENTER",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/6GM3sdCPPpmRVXHieVdplX",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "\u30a4\u30f3\u30e2\u30e9\u30ea\u30b9\u30c8",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/5slkGOeSVbS8ClFxR1WfJG",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "Angel \u604b\u3092\u3057\u305f",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/4DmJWCHv7IVVaOh7HKPLRU",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "\u7ffc",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/6SSpxUk0iwKS5ROplBxFUh",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "Ray Rule",
+                    "artist": "Kaori Ishihara",
+                    "link": "https://open.spotify.com/track/43uysfmwc42GU8dbCUrske",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273da0a3ce03c811c8191ffd4e1",
+                    "releaseDate": "2019-01-14"
+                },
+                {
+                    "name": "\u307e\u3063\u3057\u308d\u308f\u30fc\u308b\u3069",
+                    "artist": "\u307f\u304b\u304f\u306b\u3093\u3050\u30c3!",
+                    "link": "https://open.spotify.com/track/42H9We1DmbvIPBsdGGPPTE",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2730596a8cf356ab0021d17ef3e",
+                    "releaseDate": "2014-02-19"
+                },
+                {
+                    "name": "\u307e\u305f\u306d\u3001",
+                    "artist": "TrySail",
+                    "link": "https://open.spotify.com/track/5B3RDexLCiKMa1bKYc4WsA",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273ef6c77a0c55525ca56fa7fce",
+                    "releaseDate": "2019-02-27"
+                },
+                {
+                    "name": "\u30b9\u30bf\u30fc\u30c6\u30a3\u30f3\u30b0\u30d6\u30eb\u30fc",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/68CAONg2aSDKUu9rPsV6Om",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273d7a6c99c292eaa54ddf8a3f7",
+                    "releaseDate": "2018"
+                },
+                {
+                    "name": "\u30ad\u30df\u306e\u7a7a",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/6E4Nbs8R47c2p47bhuj9PH",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273bae1752979cfbb86132e63b1",
+                    "releaseDate": "2017"
+                },
+                {
+                    "name": "\u544a\u767d\u30d0\u30f3\u30b8\u30fc\u30b8\u30e3\u30f3\u30d7",
+                    "artist": "halca",
+                    "link": "https://open.spotify.com/track/2ebmLLCUuBqHJUWMDeIOGv",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27375dce76b2fd9bd842263eb76",
+                    "releaseDate": "2020-09-02"
+                },
+                {
+                    "name": "The\u2661World's\u2661End",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/1q0hYmsjjXnDOV5EXZmBUL",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273444d008a3faa7266ea8fcb7f",
+                    "releaseDate": "2015-01-07"
+                },
+                {
+                    "name": "step, step",
+                    "artist": "\u795e\u5d0e\u30a8\u30eb\u30b6",
+                    "link": "https://open.spotify.com/track/7fgq3c35vndIAwNDY2e1fd",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2735eb303a352fc9a5049aebd6c",
+                    "releaseDate": "2018-07-04"
+                },
+                {
+                    "name": "\u30c1\u30eb\u30ce\u306e\u30d1\u30fc\u30d5\u30a7\u30af\u30c8\u3055\u3093\u3059\u3046\u6559\u5ba4",
+                    "artist": "IOSYS",
+                    "link": "https://open.spotify.com/track/6MwAs47LdYmlstiDmHzksi",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b273fe910682585a207091d63cde",
+                    "releaseDate": "2008-11-02"
+                },
+                {
+                    "name": "Snow halation",
+                    "artist": "\u03bc's",
+                    "link": "https://open.spotify.com/track/7B2YKWz6UoXvOUEX32r3ov",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2738739d58a994c2846866e20c1",
+                    "releaseDate": "2013-01-09"
+                },
+                {
+                    "name": "\u6c17\u307e\u3050\u308c\u30ed\u30de\u30f3\u30c6\u30a3\u30c3\u30af",
+                    "artist": "\u9ad8\u6728\u3055\u3093(CV:\u9ad8\u6a4b\u674e\u4f9d)",
+                    "link": "https://open.spotify.com/track/2ivTDMirJsFKznRukF1Dga",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27342d94b02e2d1e4db7eb40817",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "Rhapsody of Blue Sky",
+                    "artist": "fh\u00e1na",
+                    "link": "https://open.spotify.com/track/2Y3lK46bVHAl8VBx25EMTZ",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27310fd215e6803b83d2f9ba0d5",
+                    "releaseDate": "2018-03-28"
+                },
+                {
+                    "name": "\u30de\u30c3\u30b7\u30e5\u30eb\u30fc\u30e0\u30de\u30fc\u30c1",
+                    "artist": "Yui Horie",
+                    "link": "https://open.spotify.com/track/6qh13xyTjQxMkq5dKTs9sH",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b2732cc195a5ad5c6f4ff591f3c8",
+                    "releaseDate": "2012-09-20"
+                },
+                {
+                    "name": "\u5fc3\u505a\u3057",
+                    "artist": "Akane",
+                    "link": "https://open.spotify.com/track/3PK6LUPq0vRGkjcNgOi4Oy",
+                    "pic": "https://i.scdn.co/image/ab67616d0000b27363230651648f0492307e34d9",
+                    "releaseDate": "2017-12-20"
+                }
+            ],
+            "status": "totalSongs"
+        }
+    }
+}

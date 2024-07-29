@@ -1,0 +1,22 @@
+services:
+  psli:
+    image: nikolaik/python-nodejs:python3.11-nodejs18
+    hostname: site
+    container_name: psli
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    expose:
+      - 8080
+    volumes:
+      - .:/var/www/PaulWebsite
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - psliNetwork
+
+networks:
+  psliNetwork:
+    driver: bridge

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Paul Li's Site 🔗</title>
+    <meta name="description" content="Hello there!👋 I'm Paul, an aspiring developer aiming to simplify life! Welcome to my site!">
+    <link rel="icon" href="{% static 'img/siteLogo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/line-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/background.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.compiled.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/clock.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Divider.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/effects.compiled.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/gallery.compiled.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/hoverPopup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/musicBar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/npmLibs.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/skills.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/text.css' %}">
+</head>
+
+<body class="background-main" onload="loadSection('home')">
+    <section class="navbar" style="padding: 0px;">
+        <div style="margin-top: 20px;margin-bottom: 0px;width: 100%;">
+            <div class="flex items-center justify-evenly flex-wrap">
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="loadSection('home')">
+                    <h3 id="homeTitle" class="text-lg text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Home</strong></h3>
+                    <div class="d-flex justify-center"><i class="fas fa-home icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="homeLogo" style="color: #ffd566;"></i></div>
+                </div>
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="width: auto;margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="loadSection('tools')">
+                    <h3 id="toolsTitle" class="text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Tools</strong></h3>
+                    <div><i class="fas fa-code d-flex justify-center icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="toolsLogo" style="color: rgb(105,150,104);"></i></div>
+                </div>
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="width: auto;margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="loadSection('projects')">
+                    <h3 id="projectsTitle" class="text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Projects</strong></h3>
+                    <div><i class="fas fa-terminal d-flex justify-center icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="projectsLogo" style="color: #2c7984;"></i></div>
+                </div>
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="width: auto;margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="loadSection('skills')">
+                    <h3 id="skillsTitle" class="text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Skills</strong></h3>
+                    <div><i class="fas fa-layer-group d-flex justify-center icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="skillsLogo" style="color: #659ee1;"></i></div>
+                </div>
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="width: auto;margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="loadSection('music')">
+                    <h3 id="musicTitle" class="text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Music</strong></h3>
+                    <div><i class="fas fa-music d-flex justify-center icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="musicLogo" style="color: #60baff;"></i></div>
+                </div>
+                <div class="items-center inline-block sm:flex hover-underline-animation headingHoverParent clickable" style="width: auto;margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;" onclick="getLink('https://psli-resume.bss.design/resume.html')">
+                    <h3 id="resumeTitle" class="text-lg md:text-2xl lg:text-3xl heading headingHover"><strong>Resume</strong></h3>
+                    <div><i class="fas fa-book-open d-flex justify-center icon text-lg md:text-2xl lg:text-3xl heading headingHover" id="resumeLogo" style="color: #FFFFFF;"></i></div>
+                </div>
+            </div>
+            <div style="text-align: center;margin-top: 15px;height: 3px;">
+                <h2 class="divider-style" style="margin-left: 0px;margin-bottom: 0px;margin-right: 0px;margin-top: 0px;"></h2>
+            </div>
+        </div>
+    </section>
+    <section class="justify-center items-center section sectionHide" id="home" fill="sectionHide">
+        <div class="flex justify-center items-center">
+            <div class="flex md:inline-flex items-center md:justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                <div class="flex justify-center"><i class="fas fa-home icon heading text-2xl md:text-3xl" style="color: #ffd566;"></i></div>
+                <h1 class="text-2xl md:text-3xl heading"><strong>Home</strong></h1>
+            </div>
+        </div>
+        <div class="flex justify-center items-center appendSectionSpace" style="margin-right: 15px;margin-left: 15px;">
+            <div class="inline-block sm:flex justify-center items-center darkenHover_Child">
+                <div class="flex justify-center items-center" data-tooltip="Just your standard clock!">
+                    <div class="clock" style="margin-left: 1em;margin-right: 1em;">
+                        <div class="center-nut"></div>
+                        <div class="center-nut2"></div>
+                        <div class="indicators">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="sec-hand">
+                            <div class="sec"></div>
+                        </div>
+                        <div class="min-hand">
+                            <div class="min"></div>
+                        </div>
+                        <div class="hr-hand">
+                            <div class="hr"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center notClickable" style="text-align: center;margin-right: 1em;margin-left: 1em;">
+                    <h4 class="flex items-center heading text-2xl" id="date">Date Here</h4>
+                </div>
+            </div>
+        </div>
+        <div class="appendSectionSpace notClickable" style="margin-right: 15px;margin-left: 15px;">
+            <h3 class="text-center heading text-xl">Hello there!<br>I'm <span style="color: rgb(119, 128, 166);">Paul</span>, a developer from <span style="color: rgb(119, 128, 166);">California </span>simplifying life with <span style="color: rgb(119, 128, 166);">Computer Science</span></h3>
+        </div>
+        <div style="text-align: center;margin-top: 15px;height: 3px;">
+            <h2 class="divider-style2" style="margin-left: 0px;margin-bottom: 0px;margin-right: 0px;margin-top: 0px;"></h2>
+        </div>
+        <div class="flex justify-center items-center appendSectionSpace flex-col sm:flex-row" style="margin-right: 15px;margin-left: 15px;">
+            <div class="flex justify-center items-center"><a href="http://discordapp.com/users/556592668348645377" target="_blank" id="discordpfp" data-tooltip="Opens up my discord profile!">
+                <svg width="80px" height="80px" viewBox="0 0 100 100">
+                    <svg>
+                      <defs>
+                        <mask id="my-svg-mask2">
+                          <circle cx="50" cy="50" r="50" fill="#FFFFFF" />
+                          <svg x="60" y="60">
+                            <circle cx="25" cy="25" r="17" fill="#000000" />
+                          </svg>
+                        </mask>
+                      </defs>
+                      <image mask="url(#my-svg-mask2)" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://cdn.discordapp.com/avatars/556592668348645377/66b375c57a9f971de99fac77a394211e.webp?size=100" width="100" height="100"></image>
+                    </svg>
+                    <!-- Insert svg here -->
+                    <svg x="60" y="60" id="status">
+                      <circle cx="25" cy="25" r="12" fill="#747f8d" /> <circle cx="25" cy="25" r="6" fill="#3f434a" />
+                    </svg>
+                  </svg></a></div>
+            <div style="margin-left: 1em; margin-right: 1em;">
+                <h3 class="text-center heading notClickable text-2xl" id="discordID">Sub01<span style="color: rgb(184, 186, 189);">#0585</span></h3>
+                <p class="text-truncate text-center text text-xl" style="text-wrap: initial;" id="discordStatusText">Custom Status</p>
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 15px;height: 3px;">
+            <h2 class="divider-style2" style="margin-left: 0px;margin-bottom: 0px;margin-right: 0px;margin-top: 0px;"></h2>
+        </div>
+        <div class="flex justify-center appendSectionSpace flex-col sm:flex-row" style="margin-right: 20px;margin-left: 20px;">
+            <div class="flex justify-center items-center">
+                <div class="img__wrap"><img id="currentCover_img" src="{% static 'img/noSongs.png' %}">
+                    <div class="img__description">
+                        <h5 id="currentCover_Song" class="text-break heading songTitle">Song unavailable</h3>
+                        <h6 id="currentCover_Artist" class="subtitle songArtist">No Artist</h5>
+                    </div><a id="currentCover_Link" class="stretched-link" href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div id="musicBar" class="musicBar_Outer" style="max-width: 400px;margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;">
+                <h3 class="text-break text-center heading songTitle text-xl" id="currentCover_Song-1">Song unavailable</h3>
+                <h5 class="text-break text-center subtitle songArtist" id="currentCover_Artist-1">No Artist</h5>
+                <div class="musicBar_Inner"><span id="currentDuration" class="heading" style="margin-right: 10px;">0:00</span><input type="range" id="musicProgressBar" max="0" min="0" step="1" value="0" disabled="" style="background: transparent;"><span id="totalDuration" class="heading" style="margin-left: 10px;">0:00</span></div>
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 15px;height: 3px;">
+            <h2 class="divider-style2" style="margin-left: 0px;margin-bottom: 0px;margin-right: 0px;margin-top: 0px;"></h2>
+        </div>
+    </section>
+    <section class="justify-center items-center section sectionHide" id="tools" fill="sectionHide">
+        <div class="flex justify-center items-center">
+            <div class="flex md:inline-flex items-center md:justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                <div class="flex justify-center"><i class="fas fa-code d-flex justify-center icon heading text-2xl md:text-3xl" style="color: rgb(105,150,104);"></i></div>
+                <h1 class="text-2xl md:text-3xl heading"><strong>Tools</strong></h1>
+            </div>
+        </div>
+        <div class="sm:flex sm:justify-center" style="overflow-x: clip;">
+            {% for tool in tools %}
+            <div class="card cardColor cardSpace box-3 appendSectionSpace">
+                <div class="card-body btn btn-three" onclick="loadSection('{{ tool.id }}')">
+                    <h4 class="text-center card-title heading" fill="btn btn-three">{{ tool.name }}</h4>
+                    <p class="text-center card-text text">{{ tool.desc }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section class="justify-center items-center section sectionHide" id="projects">
+        <div class="flex justify-center items-center">
+            <div class="flex md:inline-flex items-center justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                <div class="flex justify-center"><i class="fas fa-terminal d-flex justify-center icon heading text-2xl md:text-3xl" style="color: #2c7984;"></i></div>
+                <h1 class="text-2xl md:text-3xl heading"><strong>Projects</strong></h1>
+            </div>
+        </div>
+        <div class="flex justify-center items-center" style="overflow-x: clip;">
+            <div class="projectList" style="max-width: 900px;">
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink(location.href)" title="This website!">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/space1.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ef6326;" title="Html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                                    </svg><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #f0db4f;" title="Javascript"><i class="fab fa-js-square" style="color: #ffffff;"></i><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #0a50c0;" title="CSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                                    </svg><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Django"><img class="full" src="{% static 'img/logos/django.png' %}"><a class="stretched-link" href="https://www.djangoproject.com/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #be5f8b;" title="SASS"><i class="fab fa-sass" style="color: #ffffff;"></i><a class="stretched-link" href="https://sass-lang.com/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Nginx"><img class="full" src="{% static 'img/logos/nginx.png' %}"><a class="stretched-link" href="https://nginx.org/en/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #553a7d;" title="Bootstrap"><i class="fab fa-bootstrap" style="font-size: 51px;color: #ffffff;"></i><a class="stretched-link" href="https://getbootstrap.com/" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>psli.space</strong></h4>
+                        <p class="text-center card-text text"><span style="color: rgb(232, 234, 237);">The website that you are currently viewing right now!</span></p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #00cf2f;" title="Launched"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink('https://github.com/PaulShiLi/Automated-Learning-Assistant')" title="https://github.com/PaulShiLi/Automated-Learning-Assistant">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/aiBook.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ef6326;" title="Html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                                    </svg><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #f0db4f;" title="Javascript"><i class="fab fa-js-square" style="color: #ffffff;"></i><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #0a50c0;" title="CSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                                    </svg><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Django"><img class="full" src="{% static 'img/logos/django.png' %}"><a class="stretched-link" href="https://www.djangoproject.com/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #553a7d;" title="Bootstrap"><i class="fab fa-bootstrap" style="font-size: 51px;color: #ffffff;"></i><a class="stretched-link" href="https://getbootstrap.com/" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>Automated Learning Assistant</strong></h4>
+                        <p class="text-center card-text text"><span style="color: rgb(232, 234, 237);">The Automated Learning Assistant Project aims to use AI to provide students a step-by-step solution and as well as an explanation of the solution to their problems.</span></p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #00cf2f;" title="Launched"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink('https://github.com/PaulShiLi/ytDownloader_Terminal')" title="https://github.com/PaulShiLi/ytDownloader_Terminal">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/digitalMusicDownload.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>Youtube Downloader Terminal</strong></h4>
+                        <p class="text-center card-text text">A YouTube downloader for terminal which can download private playlists, public playlists, and videos.</p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #00cf2f;" title="Launched"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink('https://github.com/PaulShiLi/ASCII_Bad_Apple_Remastered')" title="https://github.com/PaulShiLi/ASCII_Bad_Apple_Remastered">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/badAppleAscii.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>ASCII Bad Apple Remastered</strong></h4>
+                        <p class="text-center card-text text">An experimental project that converts&nbsp;<strong>.mp4</strong>&nbsp;to be played in the terminal with ASCII characters.</p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #00cf2f;" title="Launched"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink('https://github.com/PaulShiLi/TI-Calculator')" title="https://github.com/PaulShiLi/TI-Calculator">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/mathEquations.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="TI Basic"><img class="full" src="{% static 'img/logos/ti-basic.png' %}"><a class="stretched-link" href="https://tibasic.fandom.com/wiki/Main_Page" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>TI-Calculator</strong></h4>
+                        <p class="text-center card-text text">A python 3 to TI-Basic compiler that could compile&nbsp;<strong>.py</strong>&nbsp;files to&nbsp;<strong>.8xp</strong>&nbsp;files and run them as well.</p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #c1921a;" title="WIP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardColor cardSpace box-3 appendSectionSpace" data-bs-toggle="tooltip" data-bss-tooltip="" onclick="getLink(location.href + '404')" title="Link not available!">
+                    <div class="card-body projectBody" hold="btn btn-three" style="padding-top: 0px;padding-left: 0px;padding-right: 0px;">
+                        <div data-bs-toggle="tooltip" data-bss-tooltip="" class="projectCover" style="border-radius: 10px;"><img src="{% static 'img/pics/musicPlatforms.png' %}">
+                            <div class="projectIcons">
+                                <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #ffffff;" title="Python"><img class="partial" src="{% static 'img/logos/python.png' %}"><a class="stretched-link" href="https://www.python.org/" target="_blank"></a></div>
+                            </div>
+                        </div>
+                        <h4 class="text-center card-title heading"><strong>ytManager</strong></h4>
+                        <p class="text-center card-text text">An all in one YouTube, Spotify, and SoundCloud manager that could stream, download, and manage playlists.</p>
+                        <div class="status">
+                            <div class="flex justify-center items-center icon__wrap" data-bs-toggle="tooltip" data-bss-tooltip="" style="background: #c1921a;" title="WIP"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="color: #ffffff;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M421.7 220.3L188.5 453.4L154.6 419.5L158.1 416H112C103.2 416 96 408.8 96 400V353.9L92.51 357.4C87.78 362.2 84.31 368 82.42 374.4L59.44 452.6L137.6 429.6C143.1 427.7 149.8 424.2 154.6 419.5L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3zM492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="justify-center items-center section sectionHide" id="skills">
+        <div class="flex justify-center items-center">
+            <div class="flex md:inline-flex items-center md:justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                <div class="flex justify-center"><i class="fas fa-layer-group d-flex justify-center icon heading text-2xl md:text-3xl" style="color: #659ee1;"></i></div>
+                <h1 class="text-2xl md:text-3xl heading"><strong>Skills</strong></h1>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-center items-center appendSectionSpace" style="overflow-x: clip;">
+            <ul class="justify-center items-center flex-wrap scale-90 sm:scale-100" id="skills-list" style="width: 100%;padding-left: 0px;">
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ffffff;"><img class="fillImg" src="{% static 'img/logos/python.png' %}">
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Python</strong></h4>
+                        </div><a class="stretched-link" href="https://www.python.org/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ef6326;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="font-size: 51px;color: #ffffff;">
+                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                        </svg>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>HTML</strong></h4>
+                        </div><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #f0db4f;"><i class="fab fa-js-square" style="font-size: 51px;color: #ffffff;"></i>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Javascript</strong></h4>
+                        </div><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #0a50c0;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" style="font-size: 51px;color: #ffffff;">
+                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                        </svg>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>CSS</strong></h4>
+                        </div><a class="stretched-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #be5f8b;"><i class="fab fa-sass" style="font-size: 51px;color: #ffffff;"></i>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>SASS</strong></h4>
+                        </div><a class="stretched-link" href="https://sass-lang.com/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #000000;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-terminal" style="font-size: 51px;color: #ffffff;">
+                            <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"></path>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"></path>
+                        </svg>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Bash</strong></h4>
+                        </div><a class="stretched-link" href="https://www.gnu.org/software/bash/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #1f91da;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="font-size: 51px;color: #ffffff;">
+                            <path d="M12.207 16.278C11.1241 17.343 9.63879 18 8 18C4.68629 18 2 15.3137 2 12C2 8.68629 4.68629 6 8 6C9.67492 6 11.1896 6.6863 12.278 7.79303L13.6923 6.37878C12.2418 4.91014 10.2272 4 8 4C3.58172 4 0 7.58172 0 12C0 16.4183 3.58172 20 8 20C10.1911 20 12.1764 19.1192 13.6212 17.6923L12.207 16.278Z" fill="currentColor"></path>
+                            <path d="M15 9H13V11H11V13H13V15H15V13H17V11H15V9Z" fill="currentColor"></path>
+                            <path d="M20 9H22V11H24V13H22V15H20V13H18V11H20V9Z" fill="currentColor"></path>
+                        </svg>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>C++</strong></h4>
+                        </div><a class="stretched-link" href="https://isocpp.org/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ffffff;"><img class="fillImg_Full" src="{% static 'img/logos/ti-basic.png' %}" width="50" height="50">
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>TI</strong>&nbsp;<strong>Basic</strong></h4>
+                        </div><a class="stretched-link" href="https://tibasic.fandom.com/wiki/Main_Page" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ffffff;"><img class="fillImg_Full" src="{% static 'img/logos/django.png' %}" width="50" height="50">
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Django</strong></h4>
+                        </div><a class="stretched-link" href="https://www.djangoproject.com/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ffffff;"><img class="fillImg_Full" src="{% static 'img/logos/figma.png' %}" width="50" height="50">
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Figma</strong></h4>
+                        </div><a class="stretched-link" href="https://www.figma.com/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #553a7d;"><i class="fab fa-bootstrap" style="font-size: 51px;color: #ffffff;"></i>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Bootstrap</strong></h4>
+                        </div><a class="stretched-link" href="https://getbootstrap.com/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #7288db;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-discord" style="font-size: 51px;color: #ffffff;">
+                            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
+                        </svg>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle" style="text-align: center;"><strong>Discord API</strong></h4>
+                        </div><a class="stretched-link" href="https://discord.com/developers/docs/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #000000;"><i class="fab fa-github" style="font-size: 51px;color: #ffffff;"></i>
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>GitHub</strong></h4>
+                        </div><a class="stretched-link" href="https://github.com/" target="_blank"></a>
+                    </div>
+                </li>
+                <li class="inline sm:flex">
+                    <div class="d-flex justify-center items-center skill__wrap" style="background: #ffffff;"><img class="fillImg_Full" src="{% static 'img/logos/linux.png' %}" width="50" height="50">
+                        <div class="d-xxl-flex align-items-xxl-center img__description">
+                            <h4 class="heading songTitle"><strong>Linux</strong></h4>
+                        </div><a class="stretched-link" href="https://www.linux.org/" target="_blank"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="music" class="justify-center items-center section sectionHide">
+        <div class="flex justify-center items-center">
+            <div class="flex md:inline-flex items-center justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                <div class="flex justify-center"><i class="fas fa-music d-flex justify-center icon heading text-2xl md:text-3xl" style="color: #60baff;"></i></div>
+                <h1 class="text-2xl md:text-3xl heading"><strong>Music</strong></h1>
+            </div>
+        </div>
+        <div class="serv" style="padding-bottom: 40px;">
+            <div id="pastMonth" class="musicList" style="margin-bottom: 2em;">
+                <h1 class="heading text-xl md:text-2xl" style="margin-left: 20px;margin-bottom: 10px;margin-top: 10px;">Past Month</h1>
+                <ul class="hideHorizontalScroll" style="margin-bottom: 0px;">
+                    <li>
+                        <ul id="pastMonth-1" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <ul id="pastMonth-2" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="past6Months" class="musicList" style="margin-bottom: 2em;">
+                <h1 class="heading text-xl md:text-2xl" style="margin-left: 20px;margin-bottom: 10px;margin-top: 10px;">Past 6 Months</h1>
+                <ul class="hideHorizontalScroll" style="margin-bottom: 0px;">
+                    <li>
+                        <ul id="past6Months-1" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <ul id="past6Months-2" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="allTime" class="musicList appendSectionSpace" style="margin-bottom: 2em;">
+                <h1 class="heading text-xl md:text-2xl" style="margin-left: 20px;margin-bottom: 10px;margin-top: 10px;">All Time</h1>
+                <ul class="hideHorizontalScroll" style="margin-bottom: 0px;">
+                    <li>
+                        <ul id="allTime-1" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                    <li style="margin-top: 5px;">
+                        <ul id="allTime-2" class="flex flex-row justify-center items-center" style="padding: 0px;">
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="toolsPopup" class="flex flex-grow-1 md:items-center section" style="height: 100%;min-height: 100%;justify-content:center;">
+        {% for tool in tools %}
+        <section id="{{tool.id}}" class="section sectionHide">
+            <div class="md:flex md:justify-center md:items-center">
+                <div class="flex md:inline-flex items-center justify-center hover-underline-animation notClickable" style="margin-top: 5px;margin-bottom: 5px;padding-bottom: 2px;">
+                    <div class="flex justify-center">{{ tool.icon|safe }}</div>
+                    <h1 class="text-2xl md:text-3xl heading"><strong>{{ tool.name }}</strong></h1>
+                </div>
+            </div>
+            <div class="flex flex-column justify-center" style="color: #ffffff;width: 100%;">
+                {{ tool.html|safe }}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/clock.js' %}"></script>
+    <script src="{% static 'js/miscFunctions.js' %}"></script>
+    <script src="{% static 'js/sectionLoader.js' %}"></script>
+    <script src="{% static 'js/spotify_Socket.js' %}"></script>
+    <script src="{% static 'js/status.js' %}"></script>
+    <script src="{% static 'js/tools.js' %}"></script>
+
+</body>
+
+</html>
