@@ -1,6 +1,0 @@
-User-Agent: *
-
-Disallow: /fileKudasai
-Disallow: /static
-Disallow: /files
-Allow: /
