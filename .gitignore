@@ -1,10 +1,16 @@
 **/__pycache__
 **/migration
 **/.vscode
+**/db/**
+**/storage/**
+**/node_modules/**
 
 *.sqlite3
 *.DS_Store
 *.cache
-**env.json
+**env**
 
 **/.tmp/*
+
+!**.placeholder
+!**example**

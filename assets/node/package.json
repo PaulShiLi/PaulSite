@@ -1,0 +1,16 @@
+{
+    "name": "nodemodules",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "tailwind-watch": "tailwindcss -i ../../assets/input.css -o ../static/css/npmLibs.css --watch",
+        "tailwind-build": "tailwindcss -i ../../assets/input.css -o ../static/css/npmLibs.css --minify"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tailwindcss": "^3.4.7"
+    }
+}

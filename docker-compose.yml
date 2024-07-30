@@ -1,22 +1,99 @@
 services:
-  psli:
+  sub-site:
     image: nikolaik/python-nodejs:python3.11-nodejs18
-    hostname: site
-    container_name: psli
+    hostname: sub
+    container_name: sub
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./assets/docker/Dockerfile
     ports:
       - "8080:8080"
     expose:
       - 8080
+    environment:
+      - DOCKER=1
     volumes:
-      - .:/var/www/PaulWebsite
+      - /Users/sub01/Projects/personal/PaulSite:/var/www/psliSite
+    working_dir: 
+      /var/www/psliSite
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - sub-qdrant
+      - sub-mongo
+      - flaresolverr
+    networks:
+      - subNetwork
+  
+  sub-qdrant:
+    image: qdrant/qdrant:latest
+    container_name: sub-vdb
+    hostname: sub-vdb
+    restart: always
+    ports:
+      - 27018:27018
+    expose:
+      - 27018
+    environment:
+      - QDRANT__SERVICE__HTTP_PORT=27018
+    volumes:
+      - ./assets/storage/db/qdrant:/qdrant/storage
     extra_hosts:
       - "host.docker.internal:host-gateway"
     networks:
-      - psliNetwork
+      - subNetwork
+  
+  sub-mongo:
+    image: mongodb/mongodb-community-server:latest
+    container_name: sub-db
+    hostname: sub-db
+    restart: always
+    ports:
+      - 27017:27017
+    expose:
+      - 27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: sub
+      MONGO_INITDB_ROOT_PASSWORD: sub
+    volumes:
+      - ./assets/storage/db/mongo:/data/db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - subNetwork
+
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - LOG_HTML=${LOG_HTML:-false}
+      - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+      - TZ=America/Los_Angeles
+    ports:
+      - "${PORT:-8191}:8191"
+    expose:
+      - 8191
+    restart: unless-stopped 
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - subNetwork
+  
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: always
+    ports:
+      - "9000:9000"
+    expose:
+      - 9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./assets/storage/portainer:/data
+    networks:
+      - subNetwork
 
 networks:
-  psliNetwork:
+  subNetwork:
     driver: bridge

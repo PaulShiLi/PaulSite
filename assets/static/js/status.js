@@ -1,11 +1,11 @@
 var myInterval = setInterval(function () {
-  $.getJSON("/static/api/api.json", function (response) {
-      discordStatus = response.discord.status;
+  $.getJSON("/api/discord/status", (data, status) =>  {
+      discordStatus = data;
   });
-  changeStatus(discordStatus['discordStatus']);
-    if (discordStatus['customStatus'] != null){
-      if (document.getElementById('discordStatusText').innerText != discordStatus['customStatus']) {
-        document.getElementById('discordStatusText').innerText = discordStatus['customStatus'];
+  changeStatus(discordStatus['status']);
+    if (discordStatus['custom'] != null){
+      if (document.getElementById('discordStatusText').innerText != discordStatus['custom']) {
+        document.getElementById('discordStatusText').innerText = discordStatus['custom'];
       }
     }
     else {

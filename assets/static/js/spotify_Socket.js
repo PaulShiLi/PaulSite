@@ -1,15 +1,17 @@
 var spotifyHistory;
 var spotifyStatus;
 
-$.getJSON("/static/api/api.json", function (response) {
-    spotifyHistory = response.spotify.history;
+$.get("/api/spotify", (data, status) => {
+  spotifyHistory = data;
     songHistory(spotifyHistory);
 });
 
 var myInterval = setInterval(function () {
-    $.getJSON("/static/api/api.json", function (response) {
-        spotifyStatus = response.spotify.status;
+    // Sleep for 1 second
+    $.get("/api/spotify/status", (data, status) => {
+        spotifyStatus = data;
     });
+    console.log(spotifyStatus);
     if (spotifyStatus["status"] != "noCurrentSong") {
         if (spotifyStatus["status"] == "currentSong") {
           currentSong(spotifyStatus);
@@ -109,6 +111,7 @@ function noCurrentSong() {
 }
 
 function currentSong(spotifyStatus) {
+  document.getElementById("alt_musicBar").setAttribute("hidden", "");
   // Playing song
   if (document.getElementById("currentCover_Link").href != spotifyStatus["link"]) {
     // Set song cover
@@ -122,63 +125,110 @@ function currentSong(spotifyStatus) {
     // Set song link
     document.getElementById("currentCover_Link").href = spotifyStatus["link"];
   }
-  // Show music bar by removing hidden attribute
   document.getElementById("musicBar").removeAttribute("hidden");
-  // Get durations in milliseconds
-  var currentDuration = spotifyStatus["currentDuration"];
-  var totalDuration = spotifyStatus["totalDuration"];
-  //    console.log("Current Duration: " + currentDuration + " milliseconds")
-  //    console.log("Total Duration: " + totalDuration + " milliseconds")
-  /* 
-           Convert duration in seconds to hours, minutes and seconds
-           */
-  // Convert current duration to hours, minutes and seconds
-  var current_ss = Math.floor(currentDuration / 1000);
-  var current_mm = Math.floor(current_ss / 60);
-  var current_hh = Math.floor(current_mm / 60);
-  current_ss = current_ss % 60;
-  current_mm = current_mm % 60;
-  current_hh = current_hh % 60;
-  // Convert total duration to hours, minutes and seconds
-  var total_ss = Math.floor(totalDuration / 1000);
-  var total_mm = Math.floor(total_ss / 60);
-  var total_hh = Math.floor(total_mm / 60);
-  total_ss = total_ss % 60;
-  total_mm = total_mm % 60;
-  total_hh = total_hh % 60;
-  // Format current duration
-  var current_hhmmssFormat = "";
-  if (current_hh > 0) {
-    current_hhmmssFormat = current_hh + ":";
+  // Check if currentDuration exists and if so show music bar
+  if (spotifyStatus["currentDuration"] != null) {
+      // Show music bar by removing hidden attribute
+      // Get durations in milliseconds
+      var currentDuration = spotifyStatus["currentDuration"];
+      var totalDuration = spotifyStatus["totalDuration"];
+      //    console.log("Current Duration: " + currentDuration + " milliseconds")
+      //    console.log("Total Duration: " + totalDuration + " milliseconds")
+      /* 
+              Convert duration in seconds to hours, minutes and seconds
+              */
+      // Convert current duration to hours, minutes and seconds
+      var current_ss = Math.floor(currentDuration / 1000);
+      var current_mm = Math.floor(current_ss / 60);
+      var current_hh = Math.floor(current_mm / 60);
+      current_ss = current_ss % 60;
+      current_mm = current_mm % 60;
+      current_hh = current_hh % 60;
+      // Convert total duration to hours, minutes and seconds
+      var total_ss = Math.floor(totalDuration / 1000);
+      var total_mm = Math.floor(total_ss / 60);
+      var total_hh = Math.floor(total_mm / 60);
+      total_ss = total_ss % 60;
+      total_mm = total_mm % 60;
+      total_hh = total_hh % 60;
+      // Format current duration
+      var current_hhmmssFormat = "";
+      if (current_hh > 0) {
+        current_hhmmssFormat = current_hh + ":";
+      }
+      if (current_mm < 10) {
+        current_mm = "0" + current_mm;
+      }
+      if (current_ss < 10) {
+        current_ss = "0" + current_ss;
+      }
+      current_hhmmssFormat = current_hhmmssFormat + current_mm + ":" + current_ss;
+      // Format total duration
+      var total_hhmmssFormat = "";
+      if (total_hh > 0) {
+        total_hhmmssFormat = total_hh + ":";
+      }
+      if (total_mm < 10) {
+        total_mm = "0" + total_mm;
+      }
+      if (total_ss < 10) {
+        total_ss = "0" + total_ss;
+      }
+      total_hhmmssFormat = total_hhmmssFormat + total_mm + ":" + total_ss;
+      // Set current duration
+      document.getElementById("currentDuration").innerHTML = current_hhmmssFormat;
+      // Set total duration
+      document.getElementById("totalDuration").innerHTML = total_hhmmssFormat;
+      /*
+              Setting the progress bar duration
+              */
+      // Set progress bar max value
+      document.getElementById("musicProgressBar").max = totalDuration;
+      // Set progress bar value
+      document.getElementById("musicProgressBar").value = currentDuration;
   }
-  if (current_mm < 10) {
-    current_mm = "0" + current_mm;
+  else {
+    // Hide music bar by adding hidden attribute
+    document.getElementById("musicBar_Inner").setAttribute("hidden", "");
+    
+    if (spotifyStatus["end"] != null){
+      document.getElementById("alt_musicBar").removeAttribute("hidden");
+      // Will be a unix timestamp in the format of 1722314.638009
+      // Convert to seconds
+      var end = spotifyStatus["end"];
+      // Get current time in seconds
+      // var currentTime = Math.floor(Date.now() / 1000);
+      // Get time remaining in seconds
+      var timeRemaining = end - Math.floor(Date.now() / 1000);
+
+      console.log("Time Remaining: " + timeRemaining + " seconds");
+      // Convert time remaining to hours, minutes and seconds
+      var timeRemaining_ss = timeRemaining;
+      var timeRemaining_mm = Math.floor(timeRemaining_ss / 60);
+      var timeRemaining_hh = Math.floor(timeRemaining_mm / 60);
+      timeRemaining_ss = timeRemaining_ss % 60;
+      timeRemaining_mm = timeRemaining_mm % 60;
+      timeRemaining_hh = timeRemaining_hh % 60;
+
+      // Round seconds to nearest whole number
+      timeRemaining_ss = Math.round(timeRemaining_ss);
+
+      console.log("Time Remaining: " + timeRemaining_hh + " hours " + timeRemaining_mm + " minutes " + timeRemaining_ss + " seconds");
+      // Format time remaining
+      var timeRemaining_hhmmssFormat = "";
+      if (timeRemaining_hh > 0) {
+        timeRemaining_hhmmssFormat = timeRemaining_hh + ":";
+      }
+      if (timeRemaining_mm < 10) {
+        timeRemaining_mm = "0" + timeRemaining_mm;
+      }
+      if (timeRemaining_ss < 10) {
+        timeRemaining_ss = "0" + timeRemaining_ss;
+      }
+      timeRemaining_hhmmssFormat = timeRemaining_hhmmssFormat + timeRemaining_mm + ":" + timeRemaining_ss
+      
+      // Set time remaining
+      document.getElementById("remainingDuration").innerHTML = timeRemaining_hhmmssFormat;
+    }
   }
-  if (current_ss < 10) {
-    current_ss = "0" + current_ss;
-  }
-  current_hhmmssFormat = current_hhmmssFormat + current_mm + ":" + current_ss;
-  // Format total duration
-  var total_hhmmssFormat = "";
-  if (total_hh > 0) {
-    total_hhmmssFormat = total_hh + ":";
-  }
-  if (total_mm < 10) {
-    total_mm = "0" + total_mm;
-  }
-  if (total_ss < 10) {
-    total_ss = "0" + total_ss;
-  }
-  total_hhmmssFormat = total_hhmmssFormat + total_mm + ":" + total_ss;
-  // Set current duration
-  document.getElementById("currentDuration").innerHTML = current_hhmmssFormat;
-  // Set total duration
-  document.getElementById("totalDuration").innerHTML = total_hhmmssFormat;
-  /*
-           Setting the progress bar duration
-           */
-  // Set progress bar max value
-  document.getElementById("musicProgressBar").max = totalDuration;
-  // Set progress bar value
-  document.getElementById("musicProgressBar").value = currentDuration;
 }
