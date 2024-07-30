@@ -13,7 +13,7 @@ services:
     environment:
       - DOCKER=1
     volumes:
-      - /Users/sub01/Projects/personal/PaulSite:/var/www/psliSite
+      - .:/var/www/psliSite
     working_dir: 
       /var/www/psliSite
     extra_hosts:
